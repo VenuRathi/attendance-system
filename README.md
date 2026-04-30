@@ -1,3 +1,9 @@
+
+![Render](https://img.shields.io/badge/Backend-Deployed-brightgreen?logo=render&label=Render&link=https://attendance-system-ul60.onrender.com)
+![Last Commit](https://img.shields.io/github/last-commit/VenuRathi/attendance-system-venu)
+![Languages](https://img.shields.io/github/languages/top/VenuRathi/attendance-system-venu)
+![Repo stars](https://img.shields.io/github/stars/VenuRathi/attendance-system-venu?style=social)
+
 # RFID Attendance System
 
 A modern, full-stack RFID-based attendance system with real-time analytics dashboard, built for classrooms and events. Features a Python Flask backend, React dashboard frontend, and ESP32/Arduino client integration.
