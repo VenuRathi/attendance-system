@@ -4,9 +4,6 @@ from datetime import datetime
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(BASE_DIR)
-
 from backend.auth import require_api_key
 from backend.database import (
     init_db,
@@ -18,7 +15,12 @@ from backend.database import (
     update_lecture_state,
     reset_attendance,
     get_connection,
-)
+) 
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+
+
 
 app = Flask(__name__)
 CORS(app)
