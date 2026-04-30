@@ -16,26 +16,46 @@ A modern, full-stack RFID-based attendance system with real-time analytics dashb
 
 ---
 
+
 ## 🗂️ Project Structure
 
 ```
 attendance-system/
 │
-├── backend/         # Flask backend (API, DB, logic)
-├── analytics/       # Data analysis scripts
-├── clients/         # Demo sender & ESP32 code
-├── replitui/        # React dashboard & UI libraries
-├── ui/              # Simple static frontend
-├── requirements.txt # Python dependencies
-├── test_api.html    # API testing page
-└── ...
+├── analytics/         # Data analysis scripts and graphs
+│   ├── analytics.py
+│   └── graphs/
+├── backend/           # Flask backend (API, DB, logic)
+│   ├── app.py
+│   ├── auth.py
+│   ├── config.py
+│   ├── database.py
+│   └── test_db.py
+├── clients/           # Demo sender & ESP32 code
+│   ├── demo_sender.py
+│   └── esp32_rfid_attendance.ino
+├── database/          # (Database files/scripts, if any)
+├── replitui/          # React dashboard & UI libraries (monorepo)
+│   ├── artifacts/
+│   │   ├── api-server/
+│   │   ├── mockup-sandbox/
+│   │   └── rfid-dashboard/
+│   └── ...
+├── requirements.txt   # Python dependencies
+├── test_api.html      # API testing page
+├── .gitignore         # Git ignore rules
+└── README.md          # Project documentation
 ```
 
 ---
 
 ## ⚙️ Setup & Usage
 
+
 ### 1. Backend (Flask)
+The backend is deployed and available online.
+
+If you want to run it locally for development:
 ```bash
 cd backend
 python -m venv ../.venv
@@ -43,7 +63,7 @@ source ../.venv/bin/activate  # or .venv\Scripts\activate on Windows
 pip install -r ../requirements.txt
 python app.py
 ```
-- Runs at: http://localhost:5000
+# Deployed backend URL: https://attendance-system-venu.onrender.com
 
 ### 2. Frontend (React Dashboard)
 ```bash
