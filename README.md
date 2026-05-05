@@ -69,7 +69,7 @@ source ../.venv/bin/activate  # or .venv\Scripts\activate on Windows
 pip install -r ../requirements.txt
 python app.py
 ```
-### Deployed backend URL: https://attendance-system-venu.onrender.com
+### I have deployed my backend using render
 
 ### 2. Frontend (React Dashboard)
 ```bash
@@ -109,10 +109,6 @@ See backend/app.py for full API details.
 - Venu Rathi
 
 ---
-
-## 📸 Screenshots
-_Add screenshots or demo GIFs here_
-
 ---
 
 ## ⭐️ Star this repo if you found it useful!
